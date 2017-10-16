@@ -1,0 +1,5 @@
+g++ -c *.cpp -std=c++11
+
+g++ -c DemoServlet_server.cpp -std=c++11 && g++ DemoServlet_server.o DemoServlet.o server_types.o server_constants.o -o DemoServlet -lthrift -O3 && ./DemoServlet
+
+g++ -c DemoServlet_client.cpp -std=c++11 && g++ DemoServlet_client.o DemoServlet.o server_types.o server_constants.o -o DemoServlet_test -lthrift -O3 && ./DemoServlet_test

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Hello Thrift</title>
+<style type="text/css">
+body {
+    font-family: verdana,arial,sans-serif;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid;
+}
+
+</style>
+<script src="/thrift.min.js"></script>
+<script src="/DemoServlet.js"></script>
+<script src="/server_types.js"></script>
+<script src="/main.js"></script>
+<script src="/utils.js"></script>
+</head>
+
+<body>
+
+
+<div id="step1">
+    <table>
+        <tbody id="input">
+            <tr>
+                <td>
+                    <input type="text" name="entity_00" value="Russia" />
+                </td>
+                <td>
+                    <input type="text" name="entity_01" value="Russian ruble" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="entity_10" value="United States" />
+                </td>
+                <td>
+                    <input type="text" name="entity_11" value="United States dollar" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button type="button" onclick="addRow();">Add one row</button>
+    <br />
+
+    <button type="button" onclick="addColumn();">Add one column</button>
+    <br />
+
+    <button type="button" onclick="removeRow();">Remove one row</button>
+    <br />
+
+    <button type="button" onclick="removeColumn();">Remove one column</button>
+    <br />
+
+    <button type="submit" onclick="submitStep1();">Submit</button>
+    <br />
+</div>
+
+
+
+
+
+</body>
+</html>
